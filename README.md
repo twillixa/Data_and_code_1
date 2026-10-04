@@ -9,7 +9,7 @@ This repo contains the raw data in the reading.csv file, the code in the analysi
 
 Our first intuition is to inspect the average reading score of both group to see if there's a significant difference
 ![Boxplot](figures/boxplot.png)
-Visually we can see that the control group have a higher mean than the treatment one but the boxplot overlap quite a bit, running a t-test give us a p-value=0.068 so not enough to call them statistically different at the 5% level. From the t test we can see that the groups aren't significantly different at the 5% level. This result would suggest that the treatment doesn't affect reading abilities or reduce it a little, another hypothesis is that the person on the treatment group are the one with reading problem and that the treatment doesn't compensate this natural gap. Let's investigate further
+Visually we can see that the control group have a higher median than the treatment one but the boxplot overlap quite a bit, running a t-test give us a p-value=0.068 so not enough to call them statistically different at the 5% level. From the t test we can see that the groups aren't significantly different at the 5% level. This result would suggest that the treatment doesn't affect reading abilities or reduce it a little, another hypothesis is that the person on the treatment group are the one with reading problem and that the treatment doesn't compensate this natural gap. Let's investigate further
 
 # **Part 2** 
 
@@ -27,7 +27,7 @@ The slope of the 2 being equal suggest a similar learning rate but we didn't acc
 
 ![3rd regression](figures/regress3.png)
 
-We can now see that the two variable have similar intercept but the slope of the treatment group is much steepper than the slope of the control one. This suggest that the treatment is more effective the older the children
+We can now see that the two variable have a closer intercept but the slope of the treatment group is much steepper than the slope of the control one. This suggest that the treatment is more effective the older the children
 
 # **Part 4** 
 
@@ -40,4 +40,4 @@ At the beginning of the program the average reading score is simmilar between th
 
 # **Conclusion** 
 
-We wanted to analyse the impact of additional reading class (treatment) on children reading score. At first it seems like the treatment group do worse on average but after accounting for age we realized that both group get better score as age increase and that the treatment age range is [5-8] while the control range[5-12] the older children in the control group artificially increase the average score compared to the treatment group. After doing regression accounting for age, group and the interaction between the two we realize that at the beginning the two group have simmilar average score but as age increase the treatment group get significantly better than the control group suggesting a positive effect of the treatment which increase with age.
+We wanted to analyse the impact of additional reading class (treatment) on children reading score. At first it seems like the treatment group do worse on average but after accounting for age we realized that both group get better score as age increase and that the treatment age range is [6.1-8.6] while the control range[6.2-12] the older children in the control group artificially increase the average score compared to the treatment group. After doing regression accounting for age, group and the interaction between the two we realize that at the beginning the two group have simmilar average score but as age increase the treatment group get significantly better than the control group suggesting a positive effect of the treatment which increase with age.
